@@ -9,7 +9,7 @@ REPO_NAME="End-to-end-Machine-Learning-project-with-mlflow"
 AUTHOR_USER_NAME="Arsalan-Azhar-AI"
 SRC_REPO="mlProject"
 AUTHOR_EMAIL="arsalanazhar2003@gmail.com"
-
+ 
 setuptools.setup(
     name=SRC_REPO,
     version=__version__,
