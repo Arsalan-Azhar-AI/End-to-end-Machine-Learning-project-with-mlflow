@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/End%20To%20End%20AI%20Project/End-to-end-Machine-Learning-project-with-mlflow/mlruns/0/0fceb56c40a749939b476ccfa8db4eca/artifacts
+end_time: 1723697933650
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0fceb56c40a749939b476ccfa8db4eca
+run_name: resilient-trout-656
+run_uuid: 0fceb56c40a749939b476ccfa8db4eca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723697933562
+status: 4
+tags: []
+user_id: K Tech

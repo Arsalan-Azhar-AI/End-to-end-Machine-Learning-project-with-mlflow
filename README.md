@@ -1,9 +1,9 @@
 # End-to-end-Machine-Learning-Project-with-MLflow
-
-
+ 
+  
 ## Workflows
 
-1. Update config.yaml
+1. Update config.yaml 
 2. Update schema.yaml
 3. Update params.yaml
 4. Update the entity
@@ -21,7 +21,7 @@
 Clone the repository
 
 ```bash
-https://github.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow
+https://github.com/Arsalan-Azhar-AI/End-to-end-Machine-Learning-project-with-mlflow
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
@@ -62,23 +62,37 @@ open up you local host and port
 
 ### dagshub
 [dagshub](https://dagshub.com/)
-
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+https://dagshub.com/arsalanazhar2003/End-to-end-Machine-Learning-project-with-mlflow.mlflow
 
 Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow
+export https://dagshub.com/arsalanazhar2003/
 
 export MLFLOW_TRACKING_USERNAME=entbappy 
 
 export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 
 ```
+powershell 
+'''
+$env:MLFLOW_TRACKING_URI= "https://dagshub.com/arsalanazhar2003/End-to-end-Machine-Learning-project-with-mlflow.mlflow"
+
+$env:MLFLOW_TRACKING_USERNAME="arsalanazhar2003"
+$env:MLFLOW_TRACKING_PASSWORD="ddbdda8eff3c518a6b060fc3d7a9cd36bc8c292d"
+
+
+'''
+for ipynb
+'''
+
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/arsalanazhar2003/End-to-end-Machine-Learning-project-with-mlflow.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="arsalanazhar2003"
+os.environ["MLFLOW_TRACKING_PASSWORD"]= "ddbdda8eff3c518a6b060fc3d7a9cd36bc8c292d"
+
+
+'''
 
 
 
@@ -86,7 +100,7 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 
 ## 1. Login to AWS console.
 
-## 2. Create IAM user for deployment
+## 2. Create IAM user for deployment ->"Search iam -> user -> create user -> set below mention Policy -> then it successfully created, now view it, then click some thing like security and access key. -> creat token. it successfully created. may some step missed. "
 
 	#with specific access
 
@@ -115,10 +129,10 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
+    - Save the URI: 116981778199.dkr.ecr.ap-southeast-2.amazonaws.com/mlproj ->"Its a simple just create repo and paste the url here."
 
 	
-## 4. Create EC2 machine (Ubuntu) 
+## 4. Create EC2 machine (Ubuntu) ->"serach EC2 -> instance -> lanch instance -> give name -> select for ubuntu -> select instance type is t2.large because 8 Gib sufficient. -> create or write in key pair option. -> select the two options 'Allow HTTPS traffic from the internet' and 'Allow HTTP traffic from the internet'-> select 32 configure storage ->  click lanch instance. it will created. now view instance and make sure inatance state is running. so next is click on instance id and click on connect button. you will see the terminal and make the terminal clear. now run all the command one by one that mention in the next step called 5."
 
 ## 5. Open EC2 and Install docker in EC2 Machine:
 	
@@ -164,5 +178,4 @@ MLflow
  - Its Production Grade
  - Trace all of your expriements
  - Logging & tagging your model
-
-
+'''
