@@ -154,10 +154,9 @@ os.environ["MLFLOW_TRACKING_PASSWORD"]= "ddbdda8eff3c518a6b060fc3d7a9cd36bc8c292
 	newgrp docker
 	
 # 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+    setting>actions>runner>new self hosted runner> choose os> then run command one by one ->"Go to github -> make copy of your github repo -> then follow these steps. 'setting>actions>runner>new self hosted runner> choose os> then run command one by one' run these command one by one on command prompt that i access through aws instance. if if any things it ask it present in the github sittings where all the commands are present "
 
-
-# 7. Setup github secrets:
+# 7. Setup github secrets: -> "Go to github -> secrets and variables -> Actions -> New repositort secret -> paste the name and scret id that present to csv file that i download from aws. -> click Add secret button."
 
     AWS_ACCESS_KEY_ID=
 
@@ -166,6 +165,7 @@ os.environ["MLFLOW_TRACKING_PASSWORD"]= "ddbdda8eff3c518a6b060fc3d7a9cd36bc8c292
     AWS_REGION = us-east-1
 
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+
 
     ECR_REPOSITORY_NAME = simple-app
 
